@@ -1,21 +1,74 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
+.container{
+  flex:1
+}
+.search{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left:24px;
+  padding-right:16px;
+}
+.search_left{
+  width:24px;
+  height:24px;
+  margin-right:17px;
+}
+.search_right{
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  display:flex;
+  flex-direction: row;
+  height:30px;
+  flex:1;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.search_icon{
+  width:16px;
+  height:16px;
+  margin-left:12px;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.search_input{
+  color:#BBBBBB;
+  font-size:13px;
+  margin-left:11px;
 }
-
-.usermotto {
-  margin-top: 200px;
+.switch{
+  display: flex;
+  padding:11px 0px 3px 4px;
+}
+.switch_word{
+  color:#C6C6C6;
+  font-size:15px;
+  padding:12px;
+}
+.article_list{
+  /* height: 500px; */
+  /* display:flex;*/
+  /* flex:1; */ 
+}
+.article_cell{
+  display:flex;
+  padding:19px 0px 17px;
+  margin:0px 16px;
+  border-bottom:1px solid #F0F0F0;
+}
+.cell_left{}
+.cell_title{
+  color:#3C3C3C;
+  font-size:17px;
+  height:70px;
+}
+.cell_bottom{}
+.cell_info{
+  color:#C6C6C6;
+  font-size:11px;
+}
+.cell_right{
+  margin-left:30px;
+}
+.cell_right_img{
+  width:90px;
+  height:90px;
+  border-radius: 4px;
 }

@@ -1,13 +1,79 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+  <view class="search">
+    <image src="/res/img/search_left@3x.png" class="search_left"/>
+    <view class='search_right'>
+      <image src="/res/img/search@3x.png" class="search_icon"/>
+      <input placeholder='搜索文章、牛人等关键词' class='search_input'/>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{lala}}</text>
+  <view class="switch">
+    <view class='switch_word'>推荐</view>
+    <view class='switch_word'>最新</view>
   </view>
+  <view class="grey_line"></view>
+  <scroll-view scroll-y="true" scroll-top="97" style="height:{{scroll_view}}px" class="article_list">
+
+    <view class='article_cell' bindtap="tapScrollCell">
+      <view class='cell_left'>
+        <view class='cell_title'>“区块链技术科普”简单易懂地介绍什么是区块链</view>
+        <view class='cell_bottom'>
+          <text class='cell_info'>观海解局</text>
+          <text class='cell_info'>50分钟前</text>
+          <text class='cell_info'>520阅读</text>
+        </view>
+      </view>
+      <view class='cell_right'><image src='https://placehold.it/90x90' class='cell_right_img'/></view>
+    </view>
+
+    <view class='article_cell'>
+      <view class='cell_left'>
+        <view class='cell_title'>“区块链技术科普”简单易懂地介绍什么是区块链</view>
+        <view class='cell_bottom'>
+          <text class='cell_info'>观海解局</text>
+          <text class='cell_info'>50分钟前</text>
+          <text class='cell_info'>520阅读</text>
+        </view>
+      </view>
+      <view class='cell_right'><image src='https://placehold.it/90x90' class='cell_right_img'/></view>
+    </view>
+
+    <view class='article_cell'>
+      <view class='cell_left'>
+        <view class='cell_title'>“区块链技术科普”简单易懂地介绍什么是区块链</view>
+        <view class='cell_bottom'>
+          <text class='cell_info'>观海解局</text>
+          <text class='cell_info'>50分钟前</text>
+          <text class='cell_info'>520阅读</text>
+        </view>
+      </view>
+      <view class='cell_right'><image src='https://placehold.it/90x90' class='cell_right_img'/></view>
+    </view>
+
+
+    <view class='article_cell'>
+      <view class='cell_left'>
+        <view class='cell_title'>“区块链技术科普”简单易懂地介绍什么是区块链</view>
+        <view class='cell_bottom'>
+          <text class='cell_info'>观海解局</text>
+          <text class='cell_info'>50分钟前</text>
+          <text class='cell_info'>520阅读</text>
+        </view>
+      </view>
+      <view class='cell_right'><image src='https://placehold.it/90x90' class='cell_right_img'/></view>
+    </view>
+
+
+    <view class='article_cell'>
+      <view class='cell_left'>
+        <view class='cell_title'>“区块链技术科普”简单易懂地介绍什么是区块链</view>
+        <view class='cell_bottom'>
+          <text class='cell_info'>观海解局</text>
+          <text class='cell_info'>50分钟前</text>
+          <text class='cell_info'>520阅读</text>
+        </view>
+      </view>
+      <view class='cell_right'><image src='https://placehold.it/90x90' class='cell_right_img'/></view>
+    </view>
+  </scroll-view>
 </view>

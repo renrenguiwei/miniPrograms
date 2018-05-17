@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- <view class='detail_nav'>
+    <view class="nav_left"><image src="/res/img/arrow_left_black@3x.png" class='nav_left_img'/></view>
+    <view class="nav_right">
+      <image src="/res/img/collection_off@3x.png" class='nav_right1'/>
+      <image src="/res/img/shareTo@3x.png" class='nav_right2'/>
+    </view>
+  </view> -->
+
+  <view class='detail_title'>
+    带你认识区块链成为区块链专家什么叫区块链呢
+  </view>
+
+  <view class='grey_line'></view>
+
+  <view class='detail_info'>
+    <view class='detail_info_left'>
+      <view class='info_left1'><image src="https://placehold.it/28x28" class='user_icon'/></view>
+      <view class='info_left2'>
+        <view class='user_name'>币圈早知道</view>
+        <view class='info_detail'>
+          <text>3小时前</text>
+          <text> · </text>
+          <text>1231浏览</text>
+        </view>
+      </view>
+    </view>
+    <view class='detail_info_right'>关注</view>
+  </view>
+
+  <view class='detail_content'>
+    区块链革命即将到来……
+    这将从根本上改变企业的运营方式。
+    毫无疑问……这场革命至少和互联网带来的革命一样重要。它将颠覆地球表面的每一项业务。
+    这就是为什么你要学会理解这项技术的重要性。在未来的岁月里，它将提供无数的投资机会……在未来的岁月里，它将在你（毫无疑问地，你的孩子）工作、经商、玩耍和在社会中运作的过程中扮演核心角色。
+    我知道这听起来很多。但请耐心听我解释一下……
+    （一）理解区块链
+    “区块链”是一种能够迷惑甚至最聪明的人的词汇。而媒体对这项技术的实际运作方式一无所知。
+    首先，区块链是比特币等加密货币背后的技术。
+  </view>
+  <map 
+    id="map" 
+    longitude="138.948626" 
+    latitude="37.416551" 
+    scale="14" 
+    controls="{{controls}}" 
+    bindcontroltap="controltap" 
+    markers="{{markers}}" 
+    bindmarkertap="markertap" 
+    polyline="{{polyline}}" 
+    bindregionchange="regionchange" 
+    show-location 
+    style="width: 100%; height: 300px;">
+  </map>
+
+</view>

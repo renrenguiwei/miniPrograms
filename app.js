@@ -1,6 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
+    console.log('awesome job')
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -13,6 +14,7 @@ App({
       }
     })
     // 获取用户信息
+    /*
     wx.getSetting({
       success: res => {
         if (res.authSetting['scope.userInfo']) {
@@ -32,6 +34,7 @@ App({
         }
       }
     })
+    */
   },
   globalData: {
     userInfo: null

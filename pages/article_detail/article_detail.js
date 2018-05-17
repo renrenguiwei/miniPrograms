@@ -11,12 +11,6 @@ Page({
     lala:'renrenguiwei',
     scroll_view:0
   },
-  // 跳转到详情页
-  tapScrollCell: function(event){
-    wx.navigateTo({
-      url: '../article_detail/article_detail'
-    })
-  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
@@ -68,12 +62,12 @@ Page({
     })
 
   },
-  // getUserInfo: function(e) {
-  //   console.log(e)
-  //   app.globalData.userInfo = e.detail.userInfo
-  //   this.setData({
-  //     userInfo: e.detail.userInfo,
-  //     hasUserInfo: true
-  //   })
-  // }
+  getUserInfo: function(e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo,
+      hasUserInfo: true
+    })
+  }
 })

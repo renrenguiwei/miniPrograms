@@ -1,12 +1,32 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/article_detail/article_detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Thank God",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#188EFC",
+    "backgroundColor":"#F8F8F8",
+    "borderStyle":"white",
+    "list": [
+      {
+        "selectedIconPath": "res/img/home_on@3x.png",
+        "iconPath": "res/img/home_off@3x.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "res/img/focus_on@3x.png",
+        "iconPath": "res/img/focus_off@3x.png",
+        "pagePath": "pages/logs/logs",
+        "text": "关注"
+      }
+    ]
   }
 }
